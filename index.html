@@ -1,0 +1,33 @@
+<html>
+    <head></head>
+    <body>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.js"></script>
+        <!-- <script src="./lib/p5.js"></script> -->
+        <script>
+            let ws = new WebSocket('ws://localhost:40511')
+            let hue = 0
+            // event emmited when connected
+            ws.onopen = function () {
+                console.log('websocket is connected ...')
+                // sending a send event to websocket server
+                ws.send('connected')
+            }
+
+            // event emmited when receiving message 
+            ws.onmessage = function (ev) {
+                console.log(ev)
+                hue = Math.random()
+                console.log('hue: ' + hue)
+            }
+
+            // from here everything is p5.js
+            function setup(){
+                createCanvas(500,500)
+                colorMode(HSL,1,1,1)
+            }
+            function draw(){
+                background(color(hue,.5,.5))
+            }
+        </script>
+    </body>
+</html>

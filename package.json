@@ -1,0 +1,24 @@
+{
+  "name": "crest_summer_2019_wifi",
+  "version": "1.0.0",
+  "description": "Wifi example for Crest Summer 2019",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guillemontecinos/crest_summer_2019_wifi.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/guillemontecinos/crest_summer_2019_wifi/issues"
+  },
+  "homepage": "https://github.com/guillemontecinos/crest_summer_2019_wifi#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "ws": "^7.0.1"
+  }
+}
