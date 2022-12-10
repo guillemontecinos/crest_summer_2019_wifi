@@ -18,7 +18,7 @@
   "homepage": "https://github.com/guillemontecinos/crest_summer_2019_wifi#readme",
   "dependencies": {
     "body-parser": "^1.19.0",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "ws": "^7.0.1"
   }
 }
